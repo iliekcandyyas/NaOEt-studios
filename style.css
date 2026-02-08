@@ -36,3 +36,12 @@ button {
 .card:hover {
   transform: translateY(-8px);
 }
+
+footer {
+  background: #0a0a14;
+  padding: 30px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
