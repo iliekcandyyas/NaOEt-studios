@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f1a;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #6a00ff, #ff4fd8);
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.games {
+  padding: 50px;
+}
+
+.card {
+  background: #1c1c2e;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
