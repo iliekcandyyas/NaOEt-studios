@@ -33,6 +33,17 @@ button {
   padding: 50px;
 }
 
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .card {
   background: #1c1c2e;
   padding: 20px;
