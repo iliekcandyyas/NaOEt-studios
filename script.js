@@ -1,21 +1,14 @@
 const faders = document.querySelectorAll(".fade");
 
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.2
-  }
-);
+function reveal() {
+  faders.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      el.classList.add("show");
+    }
+  });
+}
 
-faders.forEach(el => observer.observe(el));
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
 
-
-
-window.dispatchEvent(new Event("scroll"));
