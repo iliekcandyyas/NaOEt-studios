@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<Html>
-    <head>
-        <title>NaOEt Studios</title>
-        <link rel="icon" type="image/png" href="NaOEt studios icon v1.0.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html>
+<head>
+    <title>NaOEt Studios</title>
+    <link rel="icon" type="image/png" href="NaOEt studios icon v1.0.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
+    <canvas id="bg" style="position: fixed; top: 0; left: 0; z-index: -2; pointer-events: none;"></canvas>
+
     <header id="home">
         <h1>NaOEt Studios</h1>
         <p>We trigger the molecular shift from the ordinary to the extraordinary.</p>
     </header>
 
-   <section class="hero">
-     <h1>Ain is so sigma</h1>
-     <p>let me fucking syd.</p>
-   <button          onclick="scrollToProjects()">View Projects</button>   
-   </section>
+    <section class="hero">
+        <h1>Ain is so sigma</h1>
+        <p>let me fucking syd.</p>
+        <button onclick="scrollToProjects()">View Projects</button>   
+    </section>
 
-    <section class="team fade">
-  <h2>The (current) Gooners</h2>
+    <section class="team fade" id="projects">
+        <h2>The (current) Gooners</h2>
 
-  <div class="team-grid">
+        <div class="team-grid">
+            <div class="member">
+                <img src="ilan2.png">
+                <h3>Ilan</h3>
+                <p>Founder & Developer</p>
+            </div>
 
-    <div class="member">
-      <img src="ilan2.png">
-      <h3>Ilan</h3>
-      <p>Founder & Developer</p>
-    </div>
+            <div class="member">
+                <img src="NaOEt studios icon v1.0.png">
+                <h3>----</h3>
+                <p>-------</p>
+            </div>
 
-    <div class="member">
-      <img src="NaOEt studios icon v1.0.png">
-      <h3>----</h3>
-      <p>-------</p>
-    </div>
+            <div class="member">
+                <img src="NaOEt studios icon v1.0.png">
+                <h3>----</h3>
+                <p>-------</p>
+            </div>
 
-    <div class="member">
-        <img src="NaOEt studios icon v1.0.png">
-        <h3>----</h3>
-        <p>-------</p>
-    </div>
+            <div class="member">
+                <img src="NaOEt studios icon v1.0.png">
+                <h3>----</h3>
+                <p>-------</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="member">
-        <img src="NaOEt studios icon v1.0.png">
-        <h3>----</h3>
-        <p>-------</p>
-    </div>
-   </div>
-</section>
+    <footer id="contact">
+        <p>📧 Contact us: naoet.studios@gmail.com</p>
+        <p>© 2026 NaOEt Studios</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-<footer id="contact">
-  <p>📧 Contact us: naoet.studios@gmail.com</p>
-  <p>© 2026 NaOEt Studios</p>
-</footer>
-</Html>
+</html>
