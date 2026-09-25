@@ -3,8 +3,19 @@ const faders = document.querySelectorAll(".fade");
 function reveal() {
   faders.forEach(el => {
     const rect = el.getBoundingClientRect();
+    // Reveal when element enters viewport
     if (rect.top < window.innerHeight - 50) {
       el.classList.add("show");
+    }
+  });
+}
+
+const btn = document.getElementById("view-projects-btn");
+if (btn) {
+  btn.addEventListener("click", () => {
+    const target = document.getElementById("projects");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
     }
   });
 }
